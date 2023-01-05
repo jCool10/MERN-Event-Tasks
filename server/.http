@@ -1,0 +1,37 @@
+POST http://localhost:5000/api/v1/user/signin
+Content-Type: application/json
+
+{
+  "username": "1234567890",
+  "password": "123456789"
+}
+
+###
+POST http://localhost:5000/api/v1/user/signup
+Content-Type: application/json
+
+{
+  "username": "1234567890",
+  "password": "123456789",
+  "confirmPassword": "123456789",
+  "displayName":"displayname123"
+}
+
+###
+
+POST http://localhost:5000/api/v1/post/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNjNhODhkOGRiZTllYmVhNmZhYmJkYjdkIiwiaWF0IjoxNjcxOTkwNjY5LCJleHAiOjE2NzIwNzcwNjl9.bnK5HYPSYPhKjpeJIIcHWHoKouHAEplDTx69ncGzJMI
+
+{
+"title":"122123",
+"complete": true,
+"priority":"High",
+"user":"63a88d8dbe9ebea6fabbdb7d"
+}
+
+###
+GET http://localhost:5000/api/v1/post/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiNjNhODhkOGRiZTllYmVhNmZhYmJkYjdkIiwiaWF0IjoxNjcxOTkwNjY5LCJleHAiOjE2NzIwNzcwNjl9.bnK5HYPSYPhKjpeJIIcHWHoKouHAEplDTx69ncGzJMI
+
